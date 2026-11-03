@@ -313,36 +313,63 @@ footer a {
     transform: translateY(20px);
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
 /*respons*/
 @media (max-width: 768px) {
-    
     #hero {
         flex-direction: column-reverse;
         text-align: center;
         margin-top: 2rem;
     }
 
-
-
     .profile-pic {
         width: 200px;
         height: 200px;
     }
+    
     .card {
         flex: 1 1 100%; 
     }
     
-    
-    nav ul {
-        flex-direction: column;
+
+
+
+    nav {
+        justify-content: space-between;
+
+    .hamburger {
+        display: block;
+    }
+
+   
+    #nav-menu, 
+    #theme-toggle {
+        display: none; 
         width: 100%;
         text-align: center;
-        margin-top: 1rem;
-        gap: 1rem;
     }
+
     
-    nav {
-        justify-content: center;
-        gap: 1rem;
+    nav.active #nav-menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    nav.active #theme-toggle {
+        display: block;
+        margin-top: 1.5rem;
+    }
     }
 }
