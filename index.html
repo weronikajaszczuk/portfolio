@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Weronika Jaszczuk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Weronika Jaszczuk</div>
+            <ul id="nav-menu">
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#skille">Umiejętności</a></li>
+                <li><a href="#projekty">Projekty</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn">Ciemny motyw</button>
+        </nav>
+    </header>
+
+
+
+    <main>
+       
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Cześć, jestem Weronika!</h1>
+                <p>Szukam możliwości by stawiać swoje pierwsze kroki w branży. Poniżej znajdziecie więcej o mnie.</p>
+                <a href="#projekty" class="btn hero-btn">Zobacz moje prace</a>
+            </div>
+            <!-- Zmień nazwę pliku na swoje zdjęcie, np. wlasna-fota.jpg -->
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" alt="Moje zdjęcie profilowe" class="profile-pic">
+        </section>
+
+        <!-- Sekcja O mnie -->
+        <section id="o-mnie">
+            <h2>O mnie</h2>
+            <div class="about-content">
+                <p>Aktualnie uczę się tworzenia responsywnych stron WWW. Interesują mnie technologie frontendowe, a ten projekt to moje pierwsze kroki w świecie programowania. Poza kodowaniem interesuję się [wpisz hobby, np. grami komputerowymi, nowymi technologiami, sportem].</p>
+            </div>
+        </section>
+
+        <!-- Sekcja Umiejętności -->
+        <section id="skille">
+            <h2>Moje Umiejętności</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>HTML5</h3>
+                    <p>Semantyczna struktura, formularze, dostępność.</p>
+                </div>
+                <div class="card">
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, responsywność (Media Queries), animacje.</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Podstawowa interaktywność, manipulacja DOM, proste funkcje.</p>
+                </div>
+                <div class="card">
+                    <h3>Git & GitHub</h3>
+                    <p>Wersjonowanie kodu i publikacja przez GitHub Pages.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Projekty -->
+        <section id="projekty">
+            <h2>Zrealizowane Projekty</h2>
+            <div class="content-grid">
+                <div class="project-card">
+                    <h3>Moje Portfolio</h3>
+                    <p>Projekt zaliczeniowy z wykorzystaniem HTML, CSS i JS. W pełni responsywna strona z obsługą motywów i nowoczesnym układem.</p>
+                    <!-- Tu wkleisz link do swojego repozytorium -->
+                    <a href="https://github.com/[TWOJ-NICK]/[TWOJE-REPO]" target="_blank" class="project-link">Zobacz kod na GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [Twoje Imię i Nazwisko]. Projekt zaliczeniowy.</p>
+        <p>Kontakt: <a href="mailto:twoj@email.com">twoj@email.com</a></p>
+    </footer>
+
+    <!-- Przycisk powrotu na górę -->
+    <button id="back-to-top" class="hidden">⬆</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
